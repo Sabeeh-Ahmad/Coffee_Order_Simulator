@@ -8,7 +8,7 @@ print("Welcome to Coffee Order Simulator!\n")
 
 # Ask for the customer's name
 name = input("Enter your name: ").capitalize()
-
+emoji = input("Enter your favorite emoji: ")
 # Ask for cup size
 size = input("Enter the cup size (small/medium/large): ").capitalize()
 
@@ -22,13 +22,11 @@ order_type = input("Takeaway or Dine-in?: ").capitalize()
 
 # Print a cute little receipt
 print("\n")
-print("-" * 30)
+print(emoji * 30)
 
 print("Customer: ", name)
 
-print("Coffee size: ", size)
-
-print("Coffee type: ", coffee_type)
+print(size,coffee_type, sep="-")
 
 print("Extra Toppings: ", toppings)
 
@@ -37,10 +35,10 @@ print("Order Type: ", order_type)
 
 
 
-print("Thank you for ordering from Code Café!")
+print("Thank\nyou\nfor\nordering\nfrom\nCode\nCafé!")
 print("Your coffee will be ready shortly. Enjoy!")
-print("-" * 30)
-
+print(emoji * 30)
+print("⭐"*30, end="\n")
 # 💡 Notes for learners:
 # - input() lets Python take information from the user.
 # - print() displays information back to the user.
